@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- 3D files viewer -->
+  <script src="bootstrap/css/jquery.min.js"></script>
+  <script src="bootstrap/css/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 20px;
+  }
+  </style>
+
+
+<style>   /* content inside containers, first there is the font */
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #555555;
+}
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+.bg-4 { 
+      background-color: #2f2f2f;
+      color: #fff;
+  }
+  .container-fluid {		/* Add space to the page */
+      padding-top: 70px;
+      padding-bottom: 70px;
+}
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+}
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+   <nav class="navbar navbar-default">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+       	    <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+         </button>
+         <a class="navbar-brand" href="index-theme.html">Carme Arnalot</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">HOW TO MAKE ALMOST ANYTHING</a></li>
+            <li><a href="repository-theme.html">WEEKLY PROJECTS</a></li>
+            <li><a href="#">FINAL PROJECT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- First Container -->
+  <div class="bg-1">
+  <div class="container-fluid text-center">
+	<h1><strong>Electronic Design</strong></h1>
+	<img src="bootstrap/images/electronic.jpg" 
+		class="img-circle"  
+		alt="pcb"
+		width="350" height="350"><br><br><br>
+
+<!-- Second Container -->
+  <div class="container-fluid bg-2 text-center">
+  	<h2 style="text-align:center; margin-left: 350px">How to design a PCB and program it</h2>
+          <h3 style="text-align:center; margin-left: 350px">Summary</h3>
+          <p style="text-align:justify; margin-left: 350px">Electronics design is a big challenge when you only have bare notions in the electronics field. However, FabLab gives us the main knowledge we will need to make and test an electronic board.<br> 
+
+The task starts milling the cooper's board with the control numeric machine. In this case the printed circuit board (PCB) is single-side since it has only one layer. Next step will be solder the tiny electronic components on the cooper traces, a delicate and precise task that will take much more time.</p> <br>
+
+<p style="text-align:left; margin-left: 350px"><strong>Key words: PCB board, EAGLE, electronic Schematic, electronic components.</strong></p>
+</p>
+    </div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#Introduction">Introduction</a></li>
+        <li class="active"><a href="#material">Material and Methods</a></li>
+        <li class="active"><a href="#Resultsandconclusions">Results and conclusions</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">   
+      <h3 id="Introduction" style="text-align:center;">Introduction</h3><p style="text-align:left;">Easily Applicable Graphical Layout Editor (EAGLE) software allows the design of schematic, PCB layout, autorouter and CAM program. The schematic builds the connections between all the components we choose from the libraries. Once it is finished, we can design the PCB's layout in the board file with the positions of all components and the traces between them. At the end and the most important, we should check the design electronic rules to be sure that the board will work.<br>
+
+GIMP software will be suitable to set all the details of the PNG file of PCB's figure.  The back of the board will be black and the traces will be white in the layout figure, in the outline file, the outline will be black and the centre will be white. The board is etched onto a micro layer of copper, the substrate is made of phenolic resin flame retard, in this case FR1. When we launch the PNG file to the milling machine, FablabO's provide SRM-20, it will mill the black colour and will remain the copper traces as layout. The outline we draw will be further than 1.5 mm from the layout and the thickness of the line will be 2 millimetres.<br> 
+
+Assemble all the electronic components onto the PCB  will require to start checking all the components (kind and value), the tools we will need (soldering, solder, scratcher, double side tape, light, a magnifying glass), the steps we have to follow and the tips and tricks in mind to make a good job. However, practice and practice will be our best ally. To check all the soldered components we will use a multimeter. Another interesting thing would be to see how is changing the signal through the circuit with an oscilloscope.</p><br>
+      <h3 id="material" style="text-align:center;">Material and Methods</h3><p style="text-align:left;">The goal will be to have an electronic board ready to program. To achieve this goal I've split the whole work in 4 tasks:<br><br>
+
+1.  Getting started with EAGLE designing the scheme of the circuit and the PCB's board <br>
+2.  Check the design rules and Exporting the board design to be used with Modela<br>
+3.  Milling the PCB with SRM-20 Modela<br>
+4.  Solder and test  the electronic components<br><br>
+
+The first step will be reproduce the Hello World board, and add a LED and a Button with EAGLE. Our Fab Academy Instructor taught us how to design with EAGLE a scheme and how to manipulate the PCB's layout. After that, we should finish our own design and create the PNG file. <br><br>
+<strong>1.  Getting started with EAGLE designing the scheme of the circuit and the PCB's board </strong><br>
+The main tool to work with EAGLE are libraries where there are all the electronic components. To build the Hello World board will be useful the fab library<a href="C:\Users\CarmeMaria\Desktop\FABLAB\Lessons\6-Electronic design\entregables\fab.lbr"></a> that I installed in: In C: > Program Files(x86) > eagle6.4.0 >projects > examples (for Windows). I've opened Eagle and in the Control Panel, under "Projects" is visible the new library.<br><br>
+<img src="bootstrap/images/1_eagle.png" 
+    class="img-square"  
+    alt="pcb"
+    width=100%>
+<i>Fig. 1- Scheme of Hello World electronic circuit (EAGLE)</i><br><br>
+The schematic in electronics represents the specific components (symbol according the model and kind of board used) and the connections between them in the circuit. Wires will connect the components with a dot at the intersection. We can open the scheme in Window>Schematic. Here we have the list of all components we will use:<br><br>
+
+1 x Capacitor unpolarized, 1 uF (C1206FAB)<br>
+1 x Ceramic resonator (EFOBM)<br>
+1 x Pind header, Pinh-2x3-SMD (2x03SMD)<br>
+1 x LED (LED1206FAB)<br>
+1 x Resistor RES-US1206FAB, 499  (R1206FAB)<br>
+2 x Resistor RES-US1206FAB, 10K  (R1206FAB)<br>
+1 x Resistor RES-US1206FAB, 0  (R1206FAB)<br>
+1 x Button  (6MM_SWITCH6MM_SWITCH)<br>
+1 x Microcontroler (Attiny44-SSU)<br>
+1 x FTDI-SMD-HEADER (1X06SMD)<br><br>
+
+And for sure, we will add the ground (GND) and the power supply (VCC) symbols in the scheme. When a component is choose in the library  we can add it in the scheme. Clicking button R over this command we will see the last components added.<br>
+
+There are two ways to connect components: directly with a wire or with the label that merge connections. The scheme appears in the Fig. 1 where I've added a resistor of 0  due to the fact that the board design had some clearance errors as we will see in the following point.<br><br>
+
+ <strong>2. Checking the design rules and Exporting the board design to be used with Modela</strong><br>
+The board in electronics represents the path that connects all electronic components and the base of the final device that before will be connected and programmed. The traces laid out on the board, and these and the components must follow electronic rules that ensure the properly work of the final device. We can open the board in Window>Board or clicking SCMBRD in scheme file.<br>
+When we open the Board file all the components will be jumbled up in a corner with yellow unrouted traces attached. The most useful commands to design the board are:<br><br>
+ 
+• Route: it is useful to connect the components with traces.<br>
+ 
+•  Rip up: will remove the route wires if it is needed. <br>
+Route the traces until it looks something liked the diagram in Fig. 2. In this case also will be useful the command Move due to the fact that this position all the components. The main concept would be design the components as close as possible with their connections and the lines should be as ordinate as possible.
+After we finish connecting the components we must fixing any errors. The commands for this are:<br>
+ 
+*ERC: electronic rules check; this ensures your board will actually work (use in schematic view).<br>
+*DRC:  design rules check (in board view) - keep all the default settings (16 mil is fine); it should display a <br>
+"no error" message in the bottom left hand corner of the screen.<br><br>
+
+<img src="bootstrap/images/1week/2board.png" alt="board components" style="width: 100%">
+<i>Fig. 2 Board of Hello World electronic circuit (EAGLE)</i><br><br>
+Before checking the parameters of DCR we will select our own preferences for:<br>
+• Clearance: different and same signals 0.4 mm.<br>
+• Sizes: minimum with 0.256 mm.<br>
+We preselect: View > Grid > size 0.1mm > Alt 0.5mm.<br><br>
+To end up, export the board image as PNG file to be modified by GIMP:<br>
+• Layer settings > select only the 4th first options<br>
+• File > Export > Image > Resolution 1000 dpi / Monochrome / Area full<br><br>
+<img src="bootstrap/images/1week/3board.png" alt="board export" style="width:100%;">
+ 
+  <i>Fig. 3 Layer settings on board file (EAGLE)</i><br><br>
+
+
+GIMP software will be useful to build an outline lay down in the PCB board, customise some text, or modify some errors on the draw. I've used the version of GIMP2 to create the outline of 2 millimetres,  make a layout in black and white, and erase a thin yellow router.<br>
+Open the file of the board exported by EAGLE, and modify the canvas size. Image > Canvas size > increase the width and height till the size around the layout is at least 1.5 mm. After that we will paint all the new area in black. Also I had to erase a yellow line between two terminals of 0  resistor.<br><br>
+
+ <img src="bootstrap/images/1week/gimp_board.png" alt="board export" style="width:100%;">
+ 
+<i>Fig.  4  Resize layout with GIMP and canvas' command</i><br><br>
+
+We will open a new layer as a copy of previous layout to design the cut file, where the milling machine split the PCB from the whole board. Drawing a outline all around the previous board of 2 millimetres. In this case the centre will be paint in white and the outline black.<br><br>
+
+ <img src="bootstrap/images/1week/gimp_marging.png" alt="board export" style="width:100%;">
+  
+
+<i>Fig. 5 Outline of the board with GIMP</i><br><br>
+<br>
+
+<strong>3.  Milling the PCB with SRM-20 Modela</strong><br>
+
+The starting point will be the NPG file of the board, it must to follow all the requirements: colours and electronic rules. <br><br>
+
+<img src="bootstrap/images/1week/tall.png" alt="board export" style="width:100%;">
+<i>Fig. 6 PCB and the tool to remove the left copper</i> <br><br> 
+Following the instructions of the recommended video, and after the practice, completing with the experience, I list all the steps you should follow for milling with Modela SRM-20:<br><br>
+I.  Setting up the copper board with double side tape<br>
+II. Lay copper board flat on sacrificial layer<br>
+III.  Replacing end mills<br>
+IV. Placing the 1/64" end mill for traces and 1/32" for milling the board outline.  <br>
+V.  Open VPanel for SRM-20 in the PC, and milling machine (switch on the button over the machine). After that press "view" to position the machine.<br>
+VI. Placing the tool at the origin. Setting the coordinates:  axes XY (Fig. 7  number 2) moving the arrows and the "cursor step" continue, when those are ready "set origin point system XY".  We will place the z manually. <br>
+VII.  Levelling and checking the tool height. We will move down the end mill close to the surface touching the PCB and then tight it again holding the end mill (if not it can go up). Now "set origin point system Z" (Fig. 7  number 1) . <br><br>
+
+ 
+<img src="bootstrap/images/1week/7.png" alt="board export" style="width:100%;">
+<i>Fig.  7 VPanel for SRM-20 setting coordinates</i><br><br>
+ 
+ <img src="bootstrap/images/1week/8.png" alt="board export" style="width:100%;">
+<i>Fig.  8 Cutting command in VPanel to output the file for milling</i><br><br>
+ 
+<img src="bootstrap/images/1week/9.png" alt="board export" style="width:100%;">
+<i>Fig. 9 Fab modules creating the file to milling the layout </i><br><br>
+
+
+VIII. Using Fab modules we convert the PNG file to language paths for the milling machine: input format  > image (.png) > output format > Roland mill (.rml) > output > process > PCB traces (1/64) // PCB outline (1/32) > machine  SRM-20  > position x,y,z at origin > zjog 2 mm > Proces: calculate  . VPanel we will click "cut" to open the file created by fab modules (Fig. 9).<br>
+IX. Sending the job and milling the traces: "delete all" (Fig. 8  number 4)  , "Add" (Fig. 7  number  5)  the file from fab modules and click "output" . The milling starts.<br>
+X.  Scraping the copper in front of the pads ; the copper on the sides is fine, after that wash the board with a brush and alcohol. We can see the tool to scrape in the Fig. 6.<br><br>
+**Milling parameters: <br>
+-> x, y, z: origin position<br>
+-> zjog: 2mm (parameter inversely proportional with the total time of milling)<br>
+-> speed: 2mm/s for traces, and 3mm/s for board outline.<br>
+-> Depth: 0.15 mm for traces, and 1.7 mm for cut (thickness of board= 1.5 mm)<br>
+-> Number of offsets:  4 for traces, and 1 for board outline.<br><br>
+ 
+
+<img src="bootstrap/images/1week/10.png" alt="board export" style="width:100%;">
+<i>Fig.  10 Calculated process of milling where we can see the offsets</i><br><br>
+
+ 
+  <img src="bootstrap/images/1week/11.png" alt="board export" style="width:100%;">
+<i> Fig. 11  Model of board I've used  as training by Soldering</i><br><br>
+
+ 
+<img src="bootstrap/images/1week/12.png" alt="board export" style="width:100%;">
+<i>Fig. 12 First attempt soldering</i><br>
+<br>
+
+<strong>4.  Solder and test  the electronic components</strong><br>
+Assembling the PCB will be the most difficult part for people like me without a thin of experience in that field. Then it will be so important to know as much as possible about it before do that. The goal will be solder the electronic components to the PCB using the board file that we saw in the Fig.2. It would be suitable start with the most difficult parts at the beginning when we have all the board free and more access. Another important detail will be follow the right orientation (polarized capacitors, LED, Zener, diodes, microcontroler, etc.) of some of the components.<br><br>
+I list all the steps you should follow for soldering properly:<br><br>
+I.  Clean the surface of PCB and be sure the tip of soldering is clean and shiny. We will have beside  the soldering a metallic scratcher. <br>
+II. Heat the tip of soldering till a bit lower temperature of 400 ºC. Firstly, we have to attach the component to the right place, we will heat the copper where we want to put the component with soldering. When this is heat, we will apply the solder on the copper a few seconds and remove it, then we will add the component (with tweezers). Finally, we will remove the soldering meanwhile we hold the component in the right position till it is cold. <br>
+III.  Some tips:<br> 
+a.  heat the connection (not the solder),<br>
+b.   hold the soldering near the base of handle (like a pen).<br>
+c.  Keep the soldering on the connection until solder flow into and around well-heated connection, just a few seconds (Fig. 12). <br>
+d.  Not overheat, it might damage the component.<br>
+e.  Remove the solder and then the iron. <br>
+f.  Don't move the connection till it is cool.<br><br>
+
+
+
+<img src="bootstrap/images/1week/13.png" alt="board export" style="width:100%;">
+<i>Fig. 13 Soldering electronic components into a board</i><br><br>
+
+ <img src="bootstrap/images/1week/14.png" alt="board export" style="width:100%;">
+<i> Fig. 14 Second attempt milling the outline with Modela</i></p><br><br>
+
+<h3 id="Resultsandconclusions" style="text-align:center;">Results and conclusions</h3><p style="text-align:left;">I've followed all the theoretical instructions and completed my doubts looking for more information on internet and asking to our instructor and classmates. As I showed above I've got the design of schema and board files with EAGLE (Fig. 1 and 2) and exported the PNG file to GIMP to design the final image to mill (Fig. 4 and 5). <br>
+Milling process starts calculating the traces in machining language, I've made it with fabmodules website and from the PNG file made with GIMP. Then following the steps that our instructor gave me, we've milled the board at first attempt. However, we had to mill the outline two times, the second time setting again the origin for Z since it wasn't cut throughout all thickness (Fig. 14). <br>
+I've soldered the components following the tips of our instructor. I've used to start my training a spare board with a different layout and components. In this case, the only  directional components were diodes and microcontroler (Fig. 12). I ended up checking the right connection between components with the multimeter.<br>
+
+The specific targets settled are fulfilled effectively. Achieved the overall goal, the device is finished, now we will have to check that it is well-assembled to be programmed. 
+<br>
+I will start programming the board that I've showed in the Fig. 12. Next week I will finish the right board and I will check it following the same steps.<br>  
+
+I found pretty easy all the steps and so exciting the soldering task. Maybe the most difficult part was design the board, I had trouble designing the traces of the board going thru the electronic rules. </p><br><br>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Third Container (Grid) --> 
+ <div class="container-fluid bg-3 text-center">
+  	<h3>References</h3><br>
+	<h4><a href="https://www.linkedin.com/in/bioedric/">Guideline of the project</a><br><br>
+  <a href="http://archive.fabacademy.org/archives/2017/doc/electronics_design_eagle.html#step2">Design a PCB with Eagle</a><br><br>
+  <a href="http://academy.cba.mit.edu/classes/electronics_design/index.html">Index lesson</a><br><br> 
+  <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html">Pictures</a></h4><br><br> 
+ </div>	
+
+ 
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Contact: cmarnalot@hotmail.com and <a 
+	href="https://www.linkedin.com/in/bioedric/">Linkdin</a></p> 
+</footer>
+
+</body>
+</html>

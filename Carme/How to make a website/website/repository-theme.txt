@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- 3D files viewer -->
+  <script src="bootstrap/css/jquery.min.js"></script>
+  <script src="bootstrap/css/bootstrap.min.js"></script>
+
+
+<style>   /* content inside containers, first there is the font */
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+.bg-4 { 
+      background-color: #2f2f2f;
+      color: #fff;
+  }
+  .container-fluid {		/* Add space to the page */
+      padding-top: 70px;
+      padding-bottom: 70px;
+}
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+}
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+   <nav class="navbar navbar-default">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+       	    <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+         </button>
+         <a class="navbar-brand" href="index-theme.html">Me</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">HOW TO MAKE ALMOST ANYTHING</a></li>
+            <li><a href="#">WEEKLY PROJECTS</a></li>
+            <li><a href="#">FINAL PROJECT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- First Container -->
+  <div class="bg-1">
+  <div class="container-fluid text-center">
+	<h3>How to make almost anything</h3>
+	<img src="bootstrap/images/FablabO_shanghai.jpg" 
+		class="img-circle"  
+		alt="FablabO_shanghai"
+		width="350" height="350">
+	<h3>Imagination is more important than knowledge!!! – Albert Einstien</h3>
+
+<!-- Second Container -->
+  <div class="container-fluid bg-2 text-center">
+  	<h3>Weekly Projects</h3>
+  	<div class="row">
+     <div class="col-sm-3">
+          <img src="bootstrap/images/project.jpg" 
+    class="img-circle"
+                width="200" height="200"
+    alt="website">
+    <h5><a href="website/repository-theme.html">Project Management</a></h5>
+         </div>
+         <div class="col-sm-3">
+          <img src="bootstrap/images/cutting.jpg" 
+    class="img-circle"
+    width="200" height="200"
+    alt="cutting">
+          <h5><a href="website/repository-theme.html">Computer-controlled cutting</a></h5>
+         </div>
+         <div class="col-sm-3"> 
+          <img src="bootstrap/images/upc.jpg" 
+    class="img-circle"
+    width="200" height="200"
+    alt="3D">
+    <h5><a href="website/repository-theme.html">3D printing</a></h5>
+         </div>
+   <div class="col-sm-3"> 
+        <img src="bootstrap/images/electronic.jpg" 
+    class="img-circle"
+    width="200" height="200"
+    alt="pcb">
+    <h5> <a href="Electronic_Design.html">Electronic Design</a></h5>
+         </div>
+       <div class="col-sm-3"> 
+                <img src="bootstrap/images/Arduino.png" 
+    class="img-circle"
+    width="200" height="200"
+    alt="Arduino">
+    <h5><a href="website/repository-theme.html">Embedded Programming</a></h5>
+         </div>
+         <div class="col-sm-3"> 
+                <img src="bootstrap/images/light_box.jpg" 
+    class="img-circle"
+    width="200" height="200"
+    alt="crib">
+    <h5><a href="website/repository-theme.html">Computer-controlled machining</a></h5>
+         </div>
+         
+       </div>
+       
+  </div>					
+ 
+<!-- Third Container (Grid) --> 
+ <div class="container-fluid bg-3 text-center">
+  	<h3>Final Project</h3>
+	<h4>Light box</h4>
+          <a href="https://www.linkedin.com/in/bioedric/" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> 
+      Search</a>    
+ </div>	
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Contact: cmarnalot@hotmail.com and <a 
+	href="https://www.linkedin.com/in/bioedric/">Linkdin</a></p> 
+</footer>
+
+
+</body>
+</html>
